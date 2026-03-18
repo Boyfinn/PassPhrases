@@ -12,11 +12,12 @@ Place the dictionary file into the same directory with your cli exectuable, and 
 ### CLI-usage
 1. As simple as executing the CLI tool. Default values for all arguments will be assumed.
 2. A list of all the optional args:
+
 |   Flag  |     Default     |                        Description                            |
 | ------- |:---------------:|:-------------------------------------------------------------:|
-| -s      | <RANDOM>        | Seed, Any ASCII string                                        |
+| -s      | RANDOM          | Seed, Any ASCII string                                        |
 | -a      | words_alpha.txt | Dictionary, Path to dictionary file                           |
-| -d      | <NONE>          | Delimiter, ASCII character or string to use as delimiter      |
+| -d      | NONE            | Delimiter, ASCII character or string to use as delimiter      |
 | -n      | 4               | Words, Number of words in phrase                              |
 | -u      | 1               | Case, Which letter(s) to capitalize (0:None, 1:First, 2:All)  |
 
