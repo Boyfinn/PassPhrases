@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[]) {
     gtk_init(&argc, &argv);
-    pBuilder = gtk_builder_new_from_file("gtkForm.glade");
+    pBuilder = gtk_builder_new_from_file("res/gtkForm.glade");
     pWindow = GTK_WIDGET(gtk_builder_get_object(pBuilder, "frm_main"));
     g_signal_connect(pWindow, "destroy", G_CALLBACK(gtk_main_quit),NULL);
     gtk_builder_connect_signals(pBuilder, NULL);
@@ -68,7 +68,7 @@ void buildArgs() {
     */
     //special cases:
     GPtrArray *argv = g_ptr_array_new_with_free_func(g_free);   //Didn't know this existed'
-    g_ptr_array_add(argv, g_strdup("comtool"));
+    g_ptr_array_add(argv, g_strdup("phrasegen"));
 
 for (int i = 0; paramArgs[i].pFlag != NULL; i++) {
     g_ptr_array_add(argv, g_strdup(paramArgs[i].pFlag));

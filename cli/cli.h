@@ -8,7 +8,7 @@
 
 #define OPTIONAL_ARGS \
     OPTIONAL_STRING_ARG(seed, "RANDOM", "-s", "seed", "ASCII seed string.")\
-    OPTIONAL_STRING_ARG(dict, "words_alpha.txt", "-a", "dictionary", "Text file containing words separated by newline.")\
+    OPTIONAL_STRING_ARG(dict, "res/words_alpha.txt", "-a", "dictionary", "Text file containing words separated by newline.")\
     OPTIONAL_STRING_ARG(delim, "NONE", "-d", "delimiter", "Character or string to be used as delimiter.")\
     OPTIONAL_UINT_ARG(words, 4, "-n", "words", "Number of words to generate.")\
     OPTIONAL_UINT_ARG(upper,1,"-u","case","Letters to capitalize (0:None, 1:First, 2:All).")\

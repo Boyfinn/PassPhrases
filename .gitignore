@@ -48,7 +48,7 @@ build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
+# Makefile
 install_manifest.txt
 compile_commands.json
 
@@ -72,6 +72,4 @@ compile_flags.txt
 words_alpha.txt
 .kateproject
 .kateproject.build
-comtool
-guitool
 *.glade#

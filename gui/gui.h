@@ -12,7 +12,7 @@
 #include <ctype.h>
 #include <time.h>
 
-#define DEFAULTDICTIONARY "words_alpha.txt"
+#define DEFAULTDICTIONARY "res/words_alpha.txt"
 
 const char *pDelims[] = {"NONE", "_", "-", " "};
 
