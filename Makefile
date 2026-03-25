@@ -15,6 +15,7 @@ COMMON_FLAGS = -Wall -Wextra -MMD -MP
 DEBUG_FLAGS  = -g
 RELEASE_FLAGS = -O2
 ASSET_PATH ?= res/
+CLI_PATH ?= phrasegen
 
 CFLAGS ?= $(COMMON_FLAGS) $(DEBUG_FLAGS)
 # CFLAGS += -IEasyArgs
@@ -30,7 +31,7 @@ DEPS = $(CLI_OBJS:.o=.d) $(GUI_OBJS:.o=.d)
 all: $(BUILD_DIR)/$(CLI_TARGET) $(BUILD_DIR)/$(GUI_TARGET)
 
 release:
-	$(MAKE) CFLAGS="$(COMMON_FLAGS) $(RELEASE_FLAGS) -DASSET_PATH='\"$(ASSET_PATH)\"'" all	#ASsets
+	$(MAKE) CFLAGS="$(COMMON_FLAGS) $(RELEASE_FLAGS) -DASSET_PATH='\"$(ASSET_PATH)\"' -DCLI_PATH='\"$(CLI_PATH)\"'" all	#ASsets
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)

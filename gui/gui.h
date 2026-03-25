@@ -13,6 +13,10 @@
 #define ASSET_PATH "res/"
 #endif
 
+#ifndef CLI_PATH
+#define CLI_PATH "phrasegen"
+#endif
+
 #define DEFAULTDICTIONARY   ASSET_PATH "words_alpha.txt"
 #define GUILAYOUT           ASSET_PATH "gtkForm.glade"
 

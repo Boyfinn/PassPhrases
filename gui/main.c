@@ -68,7 +68,7 @@ void buildArgs() {
     */
     //special cases:
     GPtrArray *argv = g_ptr_array_new_with_free_func(g_free);   //Didn't know this existed'
-    g_ptr_array_add(argv, g_strdup("phrasegen"));
+    g_ptr_array_add(argv, g_strdup(CLI_PATH));
 
 for (int i = 0; paramArgs[i].pFlag != NULL; i++) {
     g_ptr_array_add(argv, g_strdup(paramArgs[i].pFlag));
